@@ -1,0 +1,19 @@
+{
+  "name": "coffeeshop",
+  "version": "1.0.0",
+  "description": "boiler plate template for coffee shop site",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Justin K. Foster",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

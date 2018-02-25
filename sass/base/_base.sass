@@ -1,0 +1,37 @@
+@import "_varables.sass"
+@import "_typography.sass"
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, del, dfn, font, img, ins,
+kbd, q, s, samp, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  border: 0
+  padding: 0
+  outline: 0
+
+body
+  background: $main_bgc
+  font-family: $main_font
+  font-size: 14px
+  color: $main_text
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+ul
+  list-style: none
+
+a:link, a:visited
+  transition: .3s color ease-in-out
+  font-weight: $base_weight
+
+a
+  text-decoration: none
+  color: $main_text
+  outline: 0
+
+a:hover, a:focus, a:active
+  color: $main_hover
+
+p
+  margin: 0 0 20px 0
+

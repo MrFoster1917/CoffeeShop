@@ -1,0 +1,85 @@
+// home navigation styling //
+nav
+  margin: 1.2em
+  min-width: 40%
+  font-size: 14px
+  .nav-list
+    flex-flow: row
+    display: flex
+    white-space: nowrap
+    justify-content: space-between
+    align-items: center
+
+    .site-title img
+      display: inline-block
+      max-width: 130px
+      vertical-align: middle
+    li
+      position: relative
+
+    li:not(.has-logo)
+      a
+        display: block
+        padding: 2px
+        text-transform: uppercase
+
+      .active
+        color: rgba(124,10,2,1)
+
+      a:before
+        content:  ''
+        width: 0px
+        height: 5px
+        background: rgba(124,10,2,1)
+        position: absolute
+        top: 100%
+        left: 0
+        transition: .9s
+
+    ul
+      position: absolute
+      z-index: 1010
+      left: -9999px
+      background-color: #F1F1F1
+      line-height: 3rem
+
+      a
+        display: block
+        padding: .5rem 1rem
+        font-weight: 400
+        text-align: justify
+
+    li:hover
+      a+ul
+        top: 100%
+        left: 0
+
+    li:hover a:before
+      width: 75%
+
+.mobile-display
+  display: none
+
+@media only screen and  (max-width: 940px)
+  html
+    font-size: 13px
+
+  body
+    width: 100%
+
+  .has-logo
+    display: none
+
+  .mobile-display
+    display: block
+    margin: 1.5em auto
+    font-size: 45%
+    text-align: center
+
+  nav
+    margin: 2em 1em
+    font-size: 12px
+
+.mobile-display
+  .site-title img
+    max-width: 40%
