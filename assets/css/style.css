@@ -352,14 +352,38 @@ nav {
 
 #mosaic_content div {
   padding: 30px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
+
+span {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin: 1.2rem;
+  padding: 3px 0px;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  opacity: 2;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
 
 .mosaic-items-tall-chef {
   background-image: url(../../assets/images/thumb.jpg);
   background-position: center;
   background-size: cover;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
   grid-column: 1/4;
   grid-row: 1/4; }
+
+.mosaic-items-tall-chef:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5); }
 
 .mosaic-items-small-bcup {
   background-image: url(../../assets/images/thumb1.jpg);
@@ -375,12 +399,28 @@ nav {
   grid-column: 6/8;
   grid-row: 1/2.8; }
 
+.mosaic-items-small-blkcup:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5); }
+
 .mosaic-items-small-beans {
   background-image: url(../../assets/images/thumb6.jpg);
   background-position: center;
   background-size: cover;
   grid-column: 4/6;
   grid-row: 3/4.8; }
+
+.mosaic-items-small-beans:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5); }
 
 .mosaic-items-small-breakfast {
   background-image: url(../../assets/images/thumb2.jpg);
@@ -402,6 +442,14 @@ nav {
   background-size: cover;
   grid-column: 6/8;
   grid-row: 5/6.8; }
+
+.mosaic-items-small-wtcup:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5); }
 
 @media only screen and (max-width: 986px) {
   .mosaic-items-tall-chef {
@@ -490,14 +538,19 @@ hr {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
+  margin: 1.2rem;
   max-width: 100%; }
   .section_menu .section_content_two .fa-coffee {
     color: #7c0a02; }
   .section_menu .section_content_two h3 {
-    margin: 0.5em;
+    margin: 0.5rem;
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 0.8px; }
+  .section_menu .section_content_two h5 {
+    margin: 3px;
+    font-size: 14px;
+    font-weight: 200; }
 
 .container {
   background: #efefef;

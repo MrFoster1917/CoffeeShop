@@ -40,14 +40,34 @@
 #mosaic_content div {
   padding: 30px;
   text-align: center;
+  overflow: hidden;
+}
+
+span {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin: 1.2rem;
+  padding: 3px 0px;
+  transform: translateY(50px);
+  opacity: 2;
+  transition: all 1s ease-in;
 }
 
 .mosaic-items-tall-chef {
   background-image: url(../../assets/images/thumb.jpg);
   background-position: center;
   background-size: cover;
+  transition: all 1s ease-in;
   grid-column: 1/4;
   grid-row: 1/4;
+}
+
+.mosaic-items-tall-chef:hover {
+  transform: scale(1);
+  transition: all 1s ease-in;
+  filter: brightness(0.5);
 }
 
 .mosaic-items-small-bcup {
@@ -66,12 +86,24 @@
   grid-row: 1/2.8;
 }
 
+.mosaic-items-small-blkcup:hover {
+  transform: scale(1);
+  transition: all 1s ease-in;
+  filter: brightness(0.5);
+}
+
 .mosaic-items-small-beans {
   background-image: url(../../assets/images/thumb6.jpg);
   background-position: center;
   background-size: cover;
   grid-column: 4/6;
   grid-row: 3/4.8;
+}
+
+.mosaic-items-small-beans:hover {
+  transform: scale(1);
+  transition: all 1s ease-in;
+  filter: brightness(0.5);
 }
 
 .mosaic-items-small-breakfast {
@@ -96,6 +128,12 @@
   background-size: cover;
   grid-column: 6/8;
   grid-row: 5/6.8;
+}
+
+.mosaic-items-small-wtcup:hover {
+  transform: scale(1);
+  transition: all 1s ease-in;
+  filter: brightness(0.5);
 }
 
 @media only screen and (max-width: 986px) {
@@ -197,6 +235,7 @@ hr {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin: 1.2rem;
   max-width: 100%;
 }
 
@@ -205,10 +244,16 @@ hr {
 }
 
 .section_menu .section_content_two h3 {
-  margin: 0.5em;
+  margin: 0.5rem;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
+}
+
+.section_menu .section_content_two h5 {
+  margin: 3px;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 .container {
